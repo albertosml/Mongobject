@@ -245,7 +245,7 @@ class Mongobject(object):
         else:
             return False
 
-    def replace(self, filter={}, replacement, upsert=False, only_one=False):
+    def replace(self, filter={}, replacement={}, upsert=False, only_one=False):
         """
         Method that replaces all documents matching the filter
 
@@ -271,7 +271,7 @@ class Mongobject(object):
         else:
             return False
 
-    def update(self, filter={}, update, upsert=False, only_one=False):
+    def update(self, filter={}, update={}, upsert=False, only_one=False):
         """
         Method that updates all documents matching the filter
 
@@ -365,7 +365,7 @@ class Mongobject(object):
         else:
             return -1
 
-    def distinct(self, key, filter=None):<
+    def distinct(self, key, filter=None):
         """
         Method for obtaining distinct values for key in the collection
 
